@@ -1,0 +1,1 @@
+NuGet.exe Pack IFluentInterface.nuspec
