@@ -9,6 +9,7 @@
 * Changed target namespace to match the project where the source is included.
 * Changed license to Apache 2
 * Changed target path to be the root of the target project, which is more logical.
+    </releaseNotes>
 		<authors>Daniel Cazzulino, kzu, Clarius</authors>
 		<language>en-US</language>
 		<projectUrl>http://netfx.codeplex.com</projectUrl>
