@@ -2,19 +2,20 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
 	<metadata>
 		<id>IFluentInterface</id>
-		<version>1.1</version>
+		<version>1.2</version>
 		<title>IFluentInterface</title>
-		<description>The core interface to implement fluent APIs that hide the default System.Object members, as explained in http://bit.ly/ifluentinterface</description>
+		<description>The core interface to implement fluent APIs that hide the default System.Object members, as explained in http://clarius.to/IFluentInterface</description>
 		<releaseNotes>v1.1
 * Changed target namespace to match the project where the source is included.
 * Changed license to Apache 2
 * Changed target path to be the root of the target project, which is more logical.
     </releaseNotes>
-		<authors>Daniel Cazzulino, kzu, Clarius</authors>
+		<authors>Daniel Cazzulino</authors>
+		<owners>clariuslabs, danielkzu</owners>
 		<language>en-US</language>
-		<projectUrl>http://netfx.codeplex.com</projectUrl>
-		<licenseUrl>http://netfx.codeplex.com/license</licenseUrl>
-		<iconUrl>http://download.codeplex.com/Project/Download/FileDownload.aspx?ProjectName=netfx&amp;DownloadId=199201</iconUrl>
-		<tags>netfx fluent API</tags>
+		<projectUrl>http://clarius.to/IFluentInterface</projectUrl>
+		<licenseUrl>https://github.com/clariuslabs/IFluentInterface/blob/master/LICENSE</licenseUrl>
+		<iconUrl>https://raw.github.com/clariuslabs/IFluentInterface/master/images/icon-32.png</iconUrl>
+		<tags>fluent API clariuslabs</tags>
 	</metadata>
 </package>

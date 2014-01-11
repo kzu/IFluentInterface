@@ -30,7 +30,7 @@ namespace $rootnamespace$
     ///   <item>When referencing the interface from within the same solution (project reference), you will still see the methods this interface is meant to hide.</item>
     ///   <item>When referencing the interface through the compiled output assembly (external reference), the standard Object methods will be hidden as intended.</item>
     /// </list>
-    /// See http://clarius.io/ifluentinterface for more information.
+    /// See http://clarius.to/IFluentInterface for more information.
     /// </remarks>
     ///	<nuget id="IFluentInterface" />
     [EditorBrowsable(EditorBrowsableState.Never)]

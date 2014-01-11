@@ -1,4 +1,4 @@
-IFluentInterface
+![Icon](https://raw.github.com/clariuslabs/IFluentInterface/master/images/icon-32.png) IFluentInterface
 ================
 
 In modern fluent APIs, [method chaining](http://en.wikipedia.org/wiki/Method_chaining) is a key techique for intuitive discovery of valid options when configuring some underlying object. 
