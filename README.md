@@ -64,3 +64,6 @@ As of 7/2013, I've found [50+ repositories using IFluentInterface](https://githu
 
 # Credits
 If you do leverage this technique, please maintain the original file credits as shown in [the source file](https://github.com/clariuslabs/IFluentInterface/blob/master/content/IFluentInterface.cs.pp). Our preference is for you to just install the [IFluentInterface](http://nuget.org/packages/ifluentinterface) nuget to get the interface and keep it up to date.
+
+
+Icon courtesy of [The Noun Project](http://thenounproject.com)
