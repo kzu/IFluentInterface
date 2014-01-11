@@ -17,5 +17,6 @@
 		<licenseUrl>https://github.com/clariuslabs/IFluentInterface/blob/master/LICENSE</licenseUrl>
 		<iconUrl>https://raw.github.com/clariuslabs/IFluentInterface/master/images/icon-32.png</iconUrl>
 		<tags>fluent API clariuslabs</tags>
+        <copyright>Copyright 2011</copyright>
 	</metadata>
 </package>
