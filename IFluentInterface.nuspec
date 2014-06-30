@@ -5,7 +5,9 @@
 		<version>1.2</version>
 		<title>IFluentInterface</title>
 		<description>The core interface to implement fluent APIs that hide the default System.Object members, as explained in http://clarius.to/IFluentInterface</description>
-		<releaseNotes>v1.1
+		<releaseNotes>v1.3
+* Set `developmentDependency` metadata attribute to prevent dependency when using `nuget pack`. Thanks @khellang!
+v1.1
 * Changed target namespace to match the project where the source is included.
 * Changed license to Apache 2
 * Changed target path to be the root of the target project, which is more logical.
