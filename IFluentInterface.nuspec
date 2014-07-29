@@ -13,7 +13,7 @@ v1.1
 * Changed target path to be the root of the target project, which is more logical.
     </releaseNotes>
 		<authors>Daniel Cazzulino</authors>
-		<owners>clariuslabs, danielkzu</owners>
+		<owners>clariuslabs, kzu</owners>
 		<language>en-US</language>
 		<developmentDependency>true</developmentDependency>
 		<projectUrl>http://clarius.to/IFluentInterface</projectUrl>
