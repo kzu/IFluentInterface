@@ -29,6 +29,7 @@ namespace $rootnamespace$
     /// <list type = "number">
     ///   <item>When referencing the interface from within the same solution (project reference), you will still see the methods this interface is meant to hide.</item>
     ///   <item>When referencing the interface through the compiled output assembly (external reference), the standard Object methods will be hidden as intended.</item>
+    ///   <item>When using Resharper, be sure to configure it to respect the attribute: Options, go to Environment | IntelliSense | Completion Appearance and check "Filter members by [EditorBrowsable] attribute".</item>
     /// </list>
     /// See http://clarius.to/IFluentInterface for more information.
     /// </remarks>
