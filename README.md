@@ -1,6 +1,10 @@
 ![Icon](https://raw.github.com/clariuslabs/IFluentInterface/master/images/icon-32.png) IFluentInterface
 ================
 
+[![Build status](https://img.shields.io/appveyor/ci/kzu/IFluentInterface.svg)](https://ci.appveyor.com/project/kzu/IFluentInterface)
+[![NuGet downloads](https://img.shields.io/nuget/dt/IFluentInterface.svg)](https://www.nuget.org/packages/IFluentInterface)
+[![Version](https://img.shields.io/nuget/v/IFluentInterface.svg)](https://www.nuget.org/packages/IFluentInterface)
+
 In modern fluent APIs, [method chaining](http://en.wikipedia.org/wiki/Method_chaining) is a key techique for intuitive discovery of valid options when configuring some underlying object. 
 
 In these scenarios, [System.Object](http://msdn.microsoft.com/en-us/library/system.object.aspx) methods (Equals, GetHashCode, GetType and ToString) only contribute clutter to Visual Studio intellisense. Everyone knows those members are always there, yet they are seldom used explicitly. This is quite annoying for fluent APIs that define the flow of invocations in terms of interfaces and usually have few members at each "step" of the method chaining statement.
@@ -59,7 +63,7 @@ public interface IVerifies : IFluentInterface
 # Who's Using This?
 Pretty much every project that has a fluent API. Over time, I’ve started liking the `IFluentInterface` name better than my original `IHideObjectMembers`, but you can also find this interface defined as `IFluentSyntax` too.
 
-As of 7/2013, I've found [50+ repositories using IFluentInterface](https://github.com/search?q=%22interface+IFluentInterface%22&type=Code&ref=searchresults), [70+ using IHideObjectMembers](https://github.com/search?q=%22interface+IHideObjectMembers%22&type=Code&ref=searchresults) and [16 using IFluentSyntax](https://github.com/search?q=%22interface+IFluentSyntax%22&type=Code&ref=searchresults), on GitHub only! And 40+ using one form or another via the [Ohloh source indexing service](http://code.ohloh.net/search?s=idef%3AIFluentInterface&browser=Default&filterChecked=true). 
+As of 7/2013, I've found [135+ repositories using IFluentInterface](https://github.com/search?q=%22interface+IFluentInterface%22&type=Code&ref=searchresults), [130+ using IHideObjectMembers](https://github.com/search?q=%22interface+IHideObjectMembers%22&type=Code&ref=searchresults) and [20+ using IFluentSyntax](https://github.com/search?q=%22interface+IFluentSyntax%22&type=Code&ref=searchresults), on GitHub only! And 30+ using one form or another via the [Ohloh source indexing service](http://code.ohloh.net/search?s=idef%3AIFluentInterface&browser=Default&filterChecked=true). 
 
 
 # Credits
