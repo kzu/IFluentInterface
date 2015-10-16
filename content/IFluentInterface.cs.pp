@@ -31,7 +31,7 @@ namespace $rootnamespace$
     ///   <item>When referencing the interface through the compiled output assembly (external reference), the standard Object methods will be hidden as intended.</item>
     ///   <item>When using Resharper, be sure to configure it to respect the attribute: Options, go to Environment | IntelliSense | Completion Appearance and check "Filter members by [EditorBrowsable] attribute".</item>
     /// </list>
-    /// See http://clarius.to/IFluentInterface for more information.
+    /// See https://kzu.github.io/IFluentInterface for more information.
     /// </remarks>
     ///	<nuget id="IFluentInterface" />
     [EditorBrowsable(EditorBrowsableState.Never)]
