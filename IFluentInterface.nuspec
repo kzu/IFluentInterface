@@ -16,10 +16,10 @@ v1.1
 		<owners>clariuslabs, kzu</owners>
 		<language>en-US</language>
 		<developmentDependency>true</developmentDependency>
-		<projectUrl>http://clarius.to/IFluentInterface</projectUrl>
-		<licenseUrl>https://github.com/clariuslabs/IFluentInterface/blob/master/LICENSE</licenseUrl>
-		<iconUrl>https://raw.github.com/clariuslabs/IFluentInterface/master/images/icon-32.png</iconUrl>
-		<tags>fluent API clariuslabs</tags>
+		<projectUrl>https://github.com/kzu/IFluentInterface</projectUrl>
+		<licenseUrl>https://github.com/kzu/IFluentInterface/blob/master/LICENSE</licenseUrl>
+		<iconUrl>https://raw.github.com/kzu/IFluentInterface/master/images/icon-32.png</iconUrl>
+		<tags>fluent API</tags>
         <copyright>Copyright 2011</copyright>
 	</metadata>
 </package>
