@@ -1,17 +1,30 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
 	<metadata>
 		<id>IFluentInterface</id>
-		<version>1.2</version>
+		<version>1.5</version>
 		<title>IFluentInterface</title>
-		<description>The core interface to implement fluent APIs that hide the default System.Object members, as explained in http://clarius.to/IFluentInterface</description>
-		<releaseNotes>v1.3
-* Set `developmentDependency` metadata attribute to prevent dependency when using `nuget pack`. Thanks @khellang!
-v1.1
-* Changed target namespace to match the project where the source is included.
-* Changed license to Apache 2
-* Changed target path to be the root of the target project, which is more logical.
-    </releaseNotes>
+		<description>The core interface to implement fluent APIs that hide the default System.Object members.</description>
+		<releaseNotes># IFluentInterface
+
+The core interface to implement fluent APIs that hide the default System.Object members 
+has been added to your project. 
+
+No additional files are added to your source, but the new IFluentInterface is ready to be 
+"implemented" in all your classes or interfaces where you want to hide the base System.Object 
+members, like:
+
+// C#
+public interface IVerifies : IFluentInterface
+
+// VB
+Public Interface IVerifies 
+	Inherits IFluentInterface
+
+
+You don't need to implement any actual interface members. The mere fact of declaring this 
+inheritance causes Visual Studio to hide the System.Object whenever it's consumed as a 
+library from another project (although you won't see the effect within the same solution).</releaseNotes>
 		<authors>Daniel Cazzulino</authors>
 		<owners>clariuslabs, kzu</owners>
 		<language>en-US</language>
@@ -22,4 +35,11 @@ v1.1
 		<tags>fluent API</tags>
         <copyright>Copyright 2011</copyright>
 	</metadata>
+  <files>
+    <file src="readme.txt" />
+    <file src="build\IFluentInterface.cs.pp" target="build" />
+	<!-- Implementing the interface in VB doesn't quite work, need to figure out why -->
+    <!-- <file src="build\IFluentInterface.vb.pp" target="build" />-->
+    <file src="build\IFluentInterface.targets" target="build" />
+  </files>
 </package>

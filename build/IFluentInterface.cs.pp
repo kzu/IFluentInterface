@@ -22,7 +22,7 @@ namespace $rootnamespace$
     using System.ComponentModel;
 
     /// <summary>
-    /// Interface that is used to build fluent interfaces and hides methods declared by <see cref="object"/> from IntelliSense.
+    /// Interface that is used to build fluent interfaces by hiding methods declared by <see cref="object"/> from IntelliSense.
     /// </summary>
     /// <remarks>
     /// Code that consumes implementations of this interface should expect one of two things:

@@ -1,4 +1,4 @@
-![Icon](https://raw.github.com/clariuslabs/IFluentInterface/master/images/icon-32.png) IFluentInterface
+![Icon](https://raw.github.com/kzu/IFluentInterface/master/images/icon-32.png) IFluentInterface
 ================
 
 ![Build status](https://www.myget.org/BuildSource/Badge/kzu?identifier=22e30b99-d7fe-4d07-8767-39832963d2ac)
@@ -11,11 +11,11 @@ In these scenarios, [System.Object](http://msdn.microsoft.com/en-us/library/syst
 
 For example, in the following [Moq](https://github.com/Moq) setup, at the particular step in the statement, there is only one "real" invocation that makes sense (Verifiable). However, it is obscured by the System.Object members:
 
-![Full Intellisense](https://raw.github.com/clariuslabs/IFluentInterface/master/images/full-intellisense.png)
+![Full Intellisense](https://raw.github.com/kzu/IFluentInterface/master/images/full-intellisense.png)
 
-A much cleaner intellisense is possible though, by simply inherinting your fluent API interfaces from the [`IFluentInterface`](https://github.com/clariuslabs/IFluentInterface/blob/master/content/IFluentInterface.cs.pp) interface provided by this project:
+A much cleaner intellisense is possible though, by simply inherinting your fluent API interfaces from the [`IFluentInterface`](https://github.com/kzu/IFluentInterface/blob/master/content/IFluentInterface.cs.pp) interface provided by this project:
 
-![Clean Intellisense](https://raw.github.com/clariuslabs/IFluentInterface/master/images/clean-intellisense.png)
+![Clean Intellisense](https://raw.github.com/kzu/IFluentInterface/master/images/clean-intellisense.png)
 
 
 # How to Install
@@ -23,7 +23,7 @@ IFluentInterface is a single interface definition file with no external dependen
 
     PM> Install-Package IFluentInterface
 
-After installation, the [`IFluentInterface`](https://github.com/clariuslabs/IFluentInterface/blob/master/content/IFluentInterface.cs.pp) file will be added to your project root, and its target namespace will match the current project's. There are no associated binaries at all.
+After installation, the [`IFluentInterface`](https://github.com/kzu/IFluentInterface/blob/master/content/IFluentInterface.cs.pp) file will be added to your project root, and its target namespace will match the current project's. There are no associated binaries at all.
 
 
 # How it Works
@@ -67,7 +67,7 @@ As of 7/2013, I've found [135+ repositories using IFluentInterface](https://gith
 
 
 # Credits
-If you do leverage this technique, please maintain the original file credits as shown in [the source file](https://github.com/clariuslabs/IFluentInterface/blob/master/content/IFluentInterface.cs.pp). Our preference is for you to just install the [IFluentInterface](http://nuget.org/packages/ifluentinterface) nuget to get the interface and keep it up to date.
+If you do leverage this technique, please maintain the original file credits as shown in [the source file](https://github.com/kzu/IFluentInterface/blob/master/content/IFluentInterface.cs.pp). Our preference is for you to just install the [IFluentInterface](http://nuget.org/packages/ifluentinterface) nuget to get the interface and keep it up to date.
 
 
 Icon courtesy of [The Noun Project](http://thenounproject.com)

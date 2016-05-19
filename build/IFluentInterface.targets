@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<PropertyGroup>
+		<IFluentInterfaceInput>$(MSBuildThisFileDirectory)IFluentInterface$(DefaultLanguageSourceExtension).pp</IFluentInterfaceInput>
+		<IFluentInterfaceOutput>$(IntermediateOutputPath)IFluentInterface.g$(DefaultLanguageSourceExtension)</IFluentInterfaceOutput>
+		<IFluentInterfaceSupported Condition="'$(Language)' != 'C#' And '$(Language)' != 'VB'">false</IFluentInterfaceSupported>
+	</PropertyGroup>
+
+	<!-- Private properties -->
+	<PropertyGroup>
+		<CoreCompileDependsOn>
+			IFluentInterface;
+			$(CoreCompileDependsOn)
+		</CoreCompileDependsOn>
+	</PropertyGroup>
+
+	<PropertyGroup>
+		<GitThisAssemblyDependsOn>
+			GitInfo;
+			GitVersion;
+			_GitInputs;
+			_GitGenerateThisAssembly
+		</GitThisAssemblyDependsOn>
+	</PropertyGroup>
+
+	<Target Name="IFluentInterface" DependsOnTargets="IFluentInterfaceGenerate" BeforeTargets="BuildOnlySettings">
+		<ItemGroup>
+			<Compile Include="$(IFluentInterfaceOutput)" />
+		</ItemGroup>
+	</Target>
+
+	<Target Name="IFluentInterfaceGenerate" Inputs="$(IFluentInterfaceInput)" Outputs="$(IFluentInterfaceOutput)">
+		<PropertyGroup>
+			<_IFluentInterfaceContent>$([System.IO.File]::ReadAllText('$(IFluentInterfaceInput)'))</_IFluentInterfaceContent>
+			<_IFluentInterfaceContent>$(_IFluentInterfaceContent.Replace('$rootnamespace$', '$(RootNamespace)'))</_IFluentInterfaceContent>
+		</PropertyGroup>
+
+		<PropertyGroup>
+			<IFluentInterfaceDir>$([System.IO.Path]::GetDirectoryName('$(IFluentInterfaceOutput)'))</IFluentInterfaceDir>
+		</PropertyGroup>
+
+		<MakeDir Directories="$(IFluentInterfaceDir)" Condition=" !Exists('$(IFluentInterfaceDir)') " />
+		<WriteLinesToFile File='$(IFluentInterfaceOutput)' Lines='$(_IFluentInterfaceContent)' Overwrite='true' />
+
+		<ItemGroup>
+			<FileWrites Include="$(IFluentInterfaceOutput)" />
+		</ItemGroup>
+	</Target>
+
+	<PropertyGroup>
+		<IFluentInterfaceImported>true</IFluentInterfaceImported>
+	</PropertyGroup>
+</Project>
