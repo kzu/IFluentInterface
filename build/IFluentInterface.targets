@@ -8,19 +8,10 @@
 
 	<!-- Private properties -->
 	<PropertyGroup>
-		<CoreCompileDependsOn>
+		<CompileDependsOn>
 			IFluentInterface;
-			$(CoreCompileDependsOn)
-		</CoreCompileDependsOn>
-	</PropertyGroup>
-
-	<PropertyGroup>
-		<GitThisAssemblyDependsOn>
-			GitInfo;
-			GitVersion;
-			_GitInputs;
-			_GitGenerateThisAssembly
-		</GitThisAssemblyDependsOn>
+			$(CompileDependsOn)
+		</CompileDependsOn>
 	</PropertyGroup>
 
 	<Target Name="IFluentInterface" DependsOnTargets="IFluentInterfaceGenerate" BeforeTargets="BuildOnlySettings">
