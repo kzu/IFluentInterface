@@ -32,10 +32,6 @@
 
 		<MakeDir Directories="$(IFluentInterfaceDir)" Condition=" !Exists('$(IFluentInterfaceDir)') " />
 		<WriteLinesToFile File='$(IFluentInterfaceOutput)' Lines='$(_IFluentInterfaceContent)' Overwrite='true' />
-
-		<ItemGroup>
-			<FileWrites Include="$(IFluentInterfaceOutput)" />
-		</ItemGroup>
 	</Target>
 
 	<PropertyGroup>
