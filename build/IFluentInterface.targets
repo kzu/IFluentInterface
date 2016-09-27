@@ -8,10 +8,10 @@
 
 	<!-- Private properties -->
 	<PropertyGroup>
-		<CompileDependsOn>
+		<CoreCompileDependsOn>
 			IFluentInterface;
-			$(CompileDependsOn)
-		</CompileDependsOn>
+			$(CoreCompileDependsOn)
+		</CoreCompileDependsOn>
 	</PropertyGroup>
 
 	<Target Name="IFluentInterface" DependsOnTargets="IFluentInterfaceGenerate" BeforeTargets="BuildOnlySettings">
