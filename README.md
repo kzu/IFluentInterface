@@ -1,7 +1,6 @@
 ![Icon](https://raw.github.com/kzu/IFluentInterface/master/images/icon-32.png) IFluentInterface
 ================
 
-![Build status](https://www.myget.org/BuildSource/Badge/kzu?identifier=22e30b99-d7fe-4d07-8767-39832963d2ac)
 [![NuGet downloads](https://img.shields.io/nuget/dt/IFluentInterface.svg)](https://www.nuget.org/packages/IFluentInterface)
 [![Version](https://img.shields.io/nuget/v/IFluentInterface.svg)](https://www.nuget.org/packages/IFluentInterface)
 
