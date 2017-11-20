@@ -18,8 +18,8 @@
 
 namespace $rootnamespace$
 {
-    using System;
-    using System.ComponentModel;
+    using global::System;
+    using global::System.ComponentModel;
 
     /// <summary>
     /// Interface that is used to build fluent interfaces by hiding methods declared by <see cref="object"/> from IntelliSense.
