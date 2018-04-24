@@ -3,18 +3,18 @@
 	<PropertyGroup>
 		<IFluentInterfaceInput>$(MSBuildThisFileDirectory)IFluentInterface$(DefaultLanguageSourceExtension).pp</IFluentInterfaceInput>
 		<IFluentInterfaceOutput>$(IntermediateOutputPath)IFluentInterface.g$(DefaultLanguageSourceExtension)</IFluentInterfaceOutput>
-		<IFluentInterfaceSupported Condition="'$(Language)' != 'C#' And '$(Language)' != 'VB'">false</IFluentInterfaceSupported>
+		<IFluentInterfaceSupported Condition="'$(Language)' == 'C#' Or '$(Language)' == 'VB'">true</IFluentInterfaceSupported>
 	</PropertyGroup>
 
 	<!-- Private properties -->
-	<PropertyGroup>
+	<PropertyGroup Condition="'$(IFluentInterfaceSupported)' == 'true'">
 		<CoreCompileDependsOn>
 			IFluentInterface;
 			$(CoreCompileDependsOn)
 		</CoreCompileDependsOn>
 	</PropertyGroup>
 
-	<Target Name="IFluentInterface" DependsOnTargets="IFluentInterfaceGenerate" BeforeTargets="BuildOnlySettings">
+	<Target Name="IFluentInterface" Condition="'$(IFluentInterfaceSupported)' == 'true'" DependsOnTargets="IFluentInterfaceGenerate" BeforeTargets="BuildOnlySettings">
 		<ItemGroup>
 			<Compile Include="$(IFluentInterfaceOutput)" />
 		</ItemGroup>
