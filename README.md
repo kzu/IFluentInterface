@@ -12,7 +12,7 @@ For example, in the following [Moq](https://github.com/Moq) setup, at the partic
 
 ![Full Intellisense](https://raw.github.com/kzu/IFluentInterface/master/images/full-intellisense.png)
 
-A much cleaner intellisense is possible though, by simply inherinting your fluent API interfaces from the [`IFluentInterface`](https://github.com/kzu/IFluentInterface/blob/master/content/IFluentInterface.cs.pp) interface provided by this project:
+A much cleaner intellisense is possible though, by simply inherinting your fluent API interfaces from the [`IFluentInterface`](https://github.com/kzu/IFluentInterface/blob/master/build/IFluentInterface.cs.pp) interface provided by this project:
 
 ![Clean Intellisense](https://raw.github.com/kzu/IFluentInterface/master/images/clean-intellisense.png)
 
@@ -22,7 +22,7 @@ IFluentInterface is a single interface definition file with no external dependen
 
     PM> Install-Package IFluentInterface
 
-After installation, the [`IFluentInterface`](https://github.com/kzu/IFluentInterface/blob/master/content/IFluentInterface.cs.pp) file will be added to your project root, and its target namespace will match the current project's. There are no associated binaries at all.
+After installation, the [`IFluentInterface`](https://github.com/kzu/IFluentInterface/blob/master/build/IFluentInterface.cs.pp) file will be added to your project root, and its target namespace will match the current project's. There are no associated binaries at all.
 
 
 # How it Works
@@ -66,7 +66,7 @@ As of 11/2017, I've found [230+ repositories using IFluentInterface](https://git
 
 
 # Credits
-If you do leverage this technique, please maintain the original file credits as shown in [the source file](https://github.com/kzu/IFluentInterface/blob/master/content/IFluentInterface.cs.pp). Our preference is for you to just install the [IFluentInterface](http://nuget.org/packages/ifluentinterface) nuget to get the interface and keep it up to date.
+If you do leverage this technique, please maintain the original file credits as shown in [the source file](https://github.com/kzu/IFluentInterface/blob/master/build/IFluentInterface.cs.pp). Our preference is for you to just install the [IFluentInterface](http://nuget.org/packages/ifluentinterface) nuget to get the interface and keep it up to date.
 
 
 Icon courtesy of [The Noun Project](http://thenounproject.com)
