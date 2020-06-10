@@ -12,7 +12,7 @@ For example, in the following [Moq](https://github.com/Moq) setup, at the partic
 
 ![Full Intellisense](https://raw.github.com/kzu/IFluentInterface/master/images/full-intellisense.png)
 
-A much cleaner intellisense is possible though, by simply inherinting your fluent API interfaces from the [`IFluentInterface`](https://github.com/kzu/IFluentInterface/blob/master/content/IFluentInterface.cs.pp) interface provided by this project:
+A much cleaner intellisense is possible though, by simply inheriting your fluent API interfaces from the [`IFluentInterface`](https://github.com/kzu/IFluentInterface/blob/master/content/IFluentInterface.cs.pp) interface provided by this project:
 
 ![Clean Intellisense](https://raw.github.com/kzu/IFluentInterface/master/images/clean-intellisense.png)
 
