@@ -18,7 +18,7 @@ A much cleaner intellisense is possible though, by simply inheriting your fluent
 
 
 # How to Install
-IFluentInterface is a single interface definition file with no external dependencies whatsoever and is distributed as a [NuGet](https://nuget.org/packages/ifluentinterface) package. It can be installed issuing the following command in the [Package Manager Console](http://docs.nuget.org/docs/start-here/using-the-package-manager-console):
+IFluentInterface is a single interface definition file with no external dependencies whatsoever and is distributed as a source-only [NuGet](https://nuget.org/packages/ifluentinterface) package. It can be installed issuing the following command in the [Package Manager Console](http://docs.nuget.org/docs/start-here/using-the-package-manager-console):
 
     PM> Install-Package IFluentInterface
 
