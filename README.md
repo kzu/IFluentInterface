@@ -62,7 +62,7 @@ public interface IVerifies : IFluentInterface
 # Who's Using This?
 Pretty much every project that has a fluent API. Over time, I’ve started liking the `IFluentInterface` name better than my original `IHideObjectMembers`, but you can also find this interface defined as `IFluentSyntax` too.
 
-As of 11/2017, I've found [230+ repositories using IFluentInterface](https://github.com/search?q=%22interface+IFluentInterface%22&type=Code&ref=searchresults), [280+ using IHideObjectMembers](https://github.com/search?q=%22interface+IHideObjectMembers%22&type=Code&ref=searchresults) and [30+ using IFluentSyntax](https://github.com/search?q=%22interface+IFluentSyntax%22&type=Code&ref=searchresults), on GitHub only! 
+As of 06/2020, I've found [290+ repositories using IFluentInterface](https://github.com/search?q=%22interface+IFluentInterface%22&type=Code&ref=searchresults), [260+ using IHideObjectMembers](https://github.com/search?q=%22interface+IHideObjectMembers%22&type=Code&ref=searchresults) and [~60 using IFluentSyntax](https://github.com/search?q=%22interface+IFluentSyntax%22&type=Code&ref=searchresults), on GitHub only! 
 
 
 # Credits
